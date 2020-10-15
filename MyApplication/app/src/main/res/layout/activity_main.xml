@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btn_dialog"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:text="Show Dialog!"
+        android:layout_marginTop="240dp"
+        android:layout_centerHorizontal="true"
+        />
+
+    <RelativeLayout
+        android:id="@+id/rel_layout_dialog"
+        android:layout_width="260dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="290dp"
+        android:visibility="invisible"
+        >
+        <EditText
+            android:id="@+id/et_dialog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"/>
+
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/lin_layout_dialog"
+        android:layout_width="260dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="330dp"
+        android:visibility="invisible">
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="30dp"
+            android:text="Cancel"
+            />
+        <Button
+            android:id="@+id/btn_ok"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:text="Ok"
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>
